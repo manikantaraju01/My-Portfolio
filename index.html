@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manikanta Raju | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">Manikanta Raju</h1>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -21,124 +25,154 @@
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="hamburger" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
-      <h2>Hello, I'm <span>Manikanta Raju</span></h2>
-      <p>Electronics & Communication Engineer | Aspiring IT Professional | Web Development | Python | React | SQL | C Programming | Cybersecurity Enthusiast</p>
+    <div class="container hero-content reveal">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
+      <h2>Hello, I'm <span class="name-gradient">Manikanta Raju</span></h2>
+      <p class="tagline">
+        Electronics & Communication Engineer • Aspiring IT Professional • Web Development • Python • React • SQL • C Programming • Cybersecurity Enthusiast
+      </p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">Get in Touch</a>
-        <a href="resume.pdf" class="btn resume-btn" download>Download Resume</a>
+        <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container narrow reveal">
+      <h2>About Me</h2>
+      <p>
+        I am an Electronics & Communication Engineering graduate passionate about building a career in Information Technology. With strong skills in Web Development, C, Python, and React, I have developed projects like an interactive quiz application and a smart contract–based voting system. My final year project focused on AI-driven sign language recognition, showcasing my ability to apply advanced technology to solve real-world problems.
+      </p>
+      <p>
+        I am eager to contribute to IT roles such as Software Development, IT Support, and Application Development. Alongside my IT focus, I also hold knowledge and certifications in Cybersecurity, which strengthens my ability to create secure and reliable systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section alt">
+    <div class="container reveal">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>🎓 Pace Institute of Technology & Sciences</h3>
+        <p>Bachelor of Technology (B.Tech), Electronics & Communications Engineering</p>
+        <p><strong>Batch:</strong> 2021 – 2025 &nbsp;|&nbsp; <strong>CGPA:</strong> 7.4</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an Electronics & Communication Engineering graduate passionate about building a career in Information Technology. With strong skills in Web Development, C, Python, and React, I have developed projects like an interactive quiz application and smart contract-based voting system. My final year project focused on AI-driven sign language recognition, showcasing my ability to apply advanced technology to solve real-world problems.
-
-        I am eager to contribute to IT roles such as Software Development, IT Support, and Application Development. Alongside my IT focus, I also hold knowledge and certifications in Cybersecurity, which strengthens my ability to create secure and reliable systems.</p>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>
-        Pace Institute of Technology & Sciences</h3>
-       <p>Bachelor of Technology - BTech, Electronics and Communications Engineering</p>
-      <p>Batch: (2021 – 2025) | CGPA: 7.4</p>
-    </div>
-  </section>
-
   <!-- Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>C Programming</li>
-      <li>Python</li>
-      <li>React.js</li>
-      <li>Frontend Development</li>
-      <li>Cybersecurity</li>
-      <li>Blockchain</li>
-      <li>AI & Deep Learning (EfficientNet, Gaussian Kernel Maps)</li>
-      <li>Tools: VS Code, Jupyter Notebook, Git</li>
-    </ul>
+  <section id="skills" class="section">
+    <div class="container reveal">
+      <h2>Technical Skills</h2>
+      <ul class="skills-grid">
+        <li>⚡ C Programming</li>
+        <li>🐍 Python</li>
+        <li>⚛️ React.js</li>
+        <li>🎨 Frontend Development</li>
+        <li>🛡️ Cybersecurity</li>
+        <li>⛓️ Blockchain</li>
+        <li>🤖 AI & Deep Learning (EfficientNet, Gaussian Kernel Maps)</li>
+        <li>🧰 Tools: VS Code, Jupyter Notebook, Git</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Internships -->
-   <section id="Internships">
-    <h2>Internships</h2>
-    <div class="Internships">
-    <h3>Web Developer Intern | Codetantra</h3>
-        <h4> March – April 2023 </h4>
-        <ul>
-        <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
-        <li>Gained experience in frontend development, UI responsiveness, and cross-browser compatibility.</li>
-        <li>Collaborated on improving interactive user interfaces for web applications.</li>
-    </ul>
-    </div>
+  <section id="Internships" class="section alt">
+    <div class="container reveal">
+      <h2>Internships</h2>
 
-    <div class="Internships">
-    <h3>Blockchain & Cybersecurity Intern | 42 Learn</h3>
-        <h4>January – June 2024</h4>
-        <ul>
-            <li>Developed a voting smart contract using blockchain technology.</li>
-            <li>Worked on secure blockchain implementation and threat mitigation techniques.</li>
-            <li>Acquired practical experience in decentralized application security.</li>
+      <div class="card">
+        <h3>💻 Web Developer Intern | Codetantra</h3>
+        <p class="muted">March – April 2023</p>
+        <ul class="bullets">
+          <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+          <li>Improved UI responsiveness and cross-browser compatibility.</li>
+          <li>Collaborated on interactive user interface enhancements.</li>
         </ul>
+      </div>
 
+      <div class="card">
+        <h3>🔐 Blockchain & Cybersecurity Intern | 42 Learn</h3>
+        <p class="muted">January – June 2024</p>
+        <ul class="bullets">
+          <li>Built a voting smart contract using blockchain technology.</li>
+          <li>Worked on secure blockchain implementation and threat mitigation.</li>
+          <li>Gained practical experience in decentralized application security.</li>
+        </ul>
+      </div>
     </div>
-   </section>
+  </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Interactive Quiz Web Application</h3>
-      <p>Designed and developed a quiz platform using HTML, CSS, JavaScript.</p>
-      <p>Implemented real-time scoring, validation, and user authentication for a secure experience.</p>
-      <p>Optimized for mobile responsiveness.</p>
-    </div>
-    <div class="project">
-      <h3>Voting Smart Contract</h3>
-      <p>Developed a smart contract to enable secure and transparent voting.</p>
-      <p>Implemented decentralized security protocols to prevent tampering.</p>
-      <p>Tested the system for blockchain vulnerabilities and security threats</p>
-    </div>
-    <div class="project">
-      <h3>EfficientNet-Based 3D Indian Sign Language Recognition</h3>
-      <p>Designed and implemented an AI-based system for real-time 3D recognition of Indian Sign Language.</p>
-      <p>Utilized EfficientNet for high-accuracy classification and Gaussian Kernel Maps for enhanced feature representation.</p>
-      <p>Optimized system for scalability and potential integration in customer service automation, enabling inclusive banking services for hearing-impaired customers.
-        </p>
+  <section id="projects" class="section">
+    <div class="container reveal">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>📝 Interactive Quiz Web Application</h3>
+        <ul class="bullets">
+          <li>Designed and developed a quiz platform using HTML, CSS, and JavaScript.</li>
+          <li>Implemented real-time scoring, validation, and basic auth.</li>
+          <li>Fully responsive and optimized for mobile.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🗳️ Voting Smart Contract</h3>
+        <ul class="bullets">
+          <li>Smart contract enabling secure and transparent voting.</li>
+          <li>Applied decentralized security protocols to prevent tampering.</li>
+          <li>Tested for common blockchain vulnerabilities and threats.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🤖 EfficientNet-Based 3D Indian Sign Language Recognition</h3>
+        <ul class="bullets">
+          <li>Built AI system for real-time 3D ISL recognition.</li>
+          <li>Used EfficientNet for classification + Gaussian Kernel Maps for features.</li>
+          <li>Scalable design with potential integration for inclusive customer service.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>C Programming – Codetantra</li>
-      <li>Responsive Web Development – Infosys Springboard</li>
-      <li>Joy of computing using python – Swayam Nptel</li>
-      <li>Programming In Java – Swayam Nptel</li>
-      <li>Python Skill Verification – HackerRank</li>
-    </ul>
+  <!-- Certifications (CENTERED content) -->
+  <section id="certifications" class="section alt">
+    <div class="container reveal center-block">
+      <h2>Certifications</h2>
+      <ul class="center-list">
+        <li>📘 C Programming – Codetantra</li>
+        <li>🌐 Responsive Web Development – Infosys Springboard</li>
+        <li>🐍 Joy of Computing using Python – Swayam NPTEL</li>
+        <li>☕ Programming in Java – Swayam NPTEL</li>
+        <li>🔑 Python Skill Verification – HackerRank</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Cell No: <a href="your cell number">9347550920</a></p>
-    <p>Email: <a href="mailto:yourmail@gmail.com">manikanta76605@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/manikantav01" target="_blank">linkedin.com/in/manikantav01</a></p>
-    <p>GitHub: <a href="https://github.com/" target="_blank">github.com/manikantaraju01</a></p>
+  <!-- Contact (CENTERED content) -->
+  <section id="contact" class="section">
+    <div class="container reveal center-block">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <p>📱 <strong>Cell:</strong> <a href="tel:+919347550920">+91 93475 50920</a></p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:manikanta76605@gmail.com">manikanta76605@gmail.com</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/manikantav01" target="_blank">linkedin.com/in/manikantav01</a></p>
+        <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/manikantaraju01" target="_blank">github.com/manikantaraju01</a></p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -146,6 +180,7 @@
     <p>© 2025 Manikanta Raju | All Rights Reserved</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
